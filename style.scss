@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+
+    background-color: #1d2126;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+
+    .row {
+        padding: 25px 0;
+    }
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+}
+
+.col-md-3 {
+    flex-basis: 25%;
+}
+
+.col-md-6 {
+    flex-basis: 50%;
+}
+
+
+
+[class*="col-"] {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+// **********HEADER MENU *****************
+
+.menu {
+    display: flex;
+    gap: 12px;
+
+    a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        color: #a4aead;
+        font-size: 10px;
+        border-radius: 4px;
+        border: 2px solid #1d2126;
+
+    }
+
+    li:first-child a {
+        border: 2px solid #23b7a4;
+        color: #23b7a4;
+    }
+
+    li:hover a {
+        border: 2px solid #5b6168;
+    }
+
+}
+
+// **********SEARCH AREA*****************
+
+.search {
+    display: flex;
+    justify-content: end;
+
+    .search_area {
+        display: flex;
+        border: 2px solid #3c4147;
+        border-radius: 4px;
+        padding: 3px 19px 3px 7px;
+
+        input {
+            background-color: transparent;
+            width: 145px;
+            border: none;
+            outline: none;
+            color: #a4aead;
+            font-size: 10px;
+            line-height: 14px;
+
+            &::placeholder {
+                text-transform: uppercase;
+                color: #a4aead;
+                font-size: 10px;
+            }
+        }
+
+        .btn {
+            height: 20px;
+            width: 20px;
+            background: url(images/search_icon.png) center no-repeat;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+// **********ADAPTIVE*****************
+
+@media screen and (max-width: 900px) {
+
+    .header .raw {
+        // display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .col-md-3:last-child{
+            display: none;
+        }
+        }
+  
+}
