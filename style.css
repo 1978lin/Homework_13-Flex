@@ -113,11 +113,12 @@ body {
   [class*=col-] {
     width: 100%;
   }
-  .header .raw {
+  .header .container .raw {
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .header .raw .col-md-3:last-child {
+  .header .container .raw .col-md-3:last-child {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

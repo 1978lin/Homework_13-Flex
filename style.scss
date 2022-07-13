@@ -67,12 +67,11 @@ body {
         border: 2px solid #23b7a4;
         color: #23b7a4;
     }
-    
+
 
     li:hover a {
         border: 2px solid #5b6168;
         color: #a4aead;
-
     }
 
 }
@@ -124,7 +123,8 @@ body {
         width: 100%;
     }
 
-    .header .raw {
+    .header .container .raw {
+        display: flex;
         flex-direction: column;
         justify-content: center;
 
